@@ -6,7 +6,7 @@
   "scripts": {
     "bower-install": "bower install",
     "start": "./node_modules/.bin/gulp server",
-    "babel-build": "./node_modules/.bin/babel ./src --out-dir ./lib --ignore *.min.js && ./node_modules/.bin/gulp dist"
+    "babel-build": "./node_modules/.bin/babel ./src --out-dir ./lib && ./node_modules/.bin/gulp dist"
   },
   "repository": {
     "type": "git",
