@@ -6,7 +6,8 @@
   "scripts": {
     "bower-install": "bower install",
     "start": "./node_modules/.bin/gulp server",
-    "babel-build": "./node_modules/.bin/babel ./src --out-dir ./lib && ./node_modules/.bin/gulp dist"
+    "babel-build": "./node_modules/.bin/babel ./src --out-dir ./lib && ./node_modules/.bin/gulp dist",
+    "yuzu-build": "npm run bower-install && npm run babel-build && node ./build-cleanup.js"
   },
   "repository": {
     "type": "git",
@@ -58,7 +59,9 @@
     "run-sequence": "^1.0.2",
     "style-loader": "^0.8.2",
     "webpack": "^1.4.13",
-    "webpack-dev-server": "^1.6.6"
+    "webpack-dev-server": "^1.6.6",
+    "rimraf": "^2.4.3",
+    "replace": "^0.3.0"
   },
   "dependencies": {
     "react": "^0.13.3",
